@@ -9,5 +9,6 @@ terraform {
 }
 
 provider "github" {
-  owner = "ShireOrg"
+  organization = "ShireOrg"
+  
 }

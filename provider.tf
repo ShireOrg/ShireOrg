@@ -8,7 +8,4 @@ terraform {
   }
 }
 
-provider "github" {
-  organization = "ShireOrg"
-  
-}
+provider "github" {}

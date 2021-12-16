@@ -36,7 +36,7 @@ jobs:
         continue-on-error: true
 
       - name: check env
-        run: echo "owner = $GITHUB_OWNER organization = $GITHUB_ORGANIZATION"
+        run: echo "owner = $GITHUB_OWNER organization = $GITHUB_ORGANIZATION github.owner = ${{ github.owner }} github.organization = ${{ github.organization }}"
 
       - name: Terraform Init
         id: init

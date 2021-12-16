@@ -8,4 +8,6 @@ terraform {
   }
 }
 
-provider "github" {}
+provider "github" {
+  owner = "ShireOrg"
+}

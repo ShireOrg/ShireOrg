@@ -12,8 +12,9 @@ on:
   workflow_dispatch:
 
 env:
-  GITHUB_OWNER: 'ShireOrg'
-  GITHUB_ORGANIZATION: 'ShireOrg'
+  GITHUB_OWNER: ShireOrg
+  GITHUB_ORGANIZATION: ShireOrg
+  TF_LOG: TRACE
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"

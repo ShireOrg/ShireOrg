@@ -35,8 +35,8 @@ jobs:
         run: terraform fmt -check
         continue-on-error: true
 
-      - name: check env
-        run: echo "owner = $GITHUB_OWNER organization = $GITHUB_ORGANIZATION github.owner = ${{ github.owner }} github.organization = ${{ github.organization }}"
+#      - name: check env
+#        run: echo "owner = $GITHUB_OWNER organization = $GITHUB_ORGANIZATION github.orgName = ${{ github.orgName }}"
 
       - name: Terraform Init
         id: init
@@ -52,7 +52,7 @@ jobs:
         continue-on-error: true
 
       - uses: actions/github-script@0.9.0
-        if: github.event_name == 'pull_request'
+        # if: github.event_name == 'pull_request'
         env:
           PLAN: "terraform\n${{ steps.plan.outputs.stdout }}"
         with:

@@ -5,6 +5,7 @@ terraform {
     workspaces {
       tags = ["GitHub"]
     }
+  }
   required_providers {
     github = {
       source  = "integrations/github"

@@ -7,5 +7,5 @@ resource "github_repository" "repository345" {
   has_issues = true
   has_projects = false
   has_wiki = false
-  topics = ""
+  topics = test1, test2
 }

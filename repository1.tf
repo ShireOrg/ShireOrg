@@ -5,6 +5,6 @@ resource "github_repository" "repository345" {
   visibility = "private"
   auto_init  = true
   has_issues = true
-  has_projects = false
-  has_wiki = false
+  has_projects = true
+  has_wiki = true
 }

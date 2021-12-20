@@ -6,4 +6,5 @@ resource "github_repository" "repository345" {
   auto_init  = true
   has_issues = true
   has_wiki = true
+  has_projects = true
 }

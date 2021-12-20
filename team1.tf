@@ -4,7 +4,7 @@ resource "github_team" "team_awesome" {
   privacy     = "closed"
 }
 resource "github_team_membership" "team_awesome_membership" {
-  team_id  = github_team.some_team.id
+  team_id  = github_team.team_awesome.id
   username = "michaelshire"
   role     = "maintainer"
 }
